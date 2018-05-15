@@ -4,10 +4,26 @@
     <meta charset="utf-8"/>
     <title>Wikipedia Viewer</title>
     <link rel="stylesheet" href="styles.css"/>
-    <script type="text/javascript" href="javascript.js"></script>
+    <script type="text/javascript" href="javascript.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
+    <div class="content">
+    <h3>Wikipedia Viewer</h3>
 
-  </body>  
+    <div class="search">
+      <form>
+        <input id="keyword" type="text" name="search" placeholder="search Wikipedia">
+        <button id="send" type="submit" accesskey="enter">Submit</button>
+
+        <a class="random" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Random Article</a>
+      </form>
+
+    </div>
+  </div>
+
+  <div id="result">
+
+  </div>
+  </body>
 </html>
